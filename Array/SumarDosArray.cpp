@@ -1,4 +1,3 @@
-// Online C++ compiler to run C++ program online
 //Sumar los elementos de dos array de la misma longitud y mostrar en pantalla
 #include <iostream>
 using namespace std;
@@ -25,6 +24,8 @@ int main() {
         suma[i] = Array1[i] + Array2[i];
    }
    cout << "El array suma es: " << endl;
+    
+   //Recorremos el array suma para mostyrar el resultado 
    for (int i=0; i < 5;i++){
         cout << suma[i]  << endl;
    }
