@@ -1,3 +1,5 @@
+// Online C++ compiler to run C++ program online
+
 /*1.   La clínica Santa Isabel en su cuarta jornada de vacunación contra el COVID-19 desea inmunizar a su personal en primera instancia. Pero debido a su alta cantidad de personal requiere que estos se vacunen por días dependiendo en cuanto termina su número de identificación. 
 Para esto requiere un software el cual identifica a quienes les corresponde en el respectivo día. 
 Para poder ser vacunado, el último dígito del número de identificación debe ser igual a la unidad del día en cuestión.
@@ -32,23 +34,24 @@ int main() {
         } while (error==false);
         identificacion[i]=cedula;
     } 
+    cout << endl << "DIAS DE VACUNACION SEGUN LA CEDULA: " << endl;
     for (int i= 0; i < n; i++){
         longitud = size(identificacion[i]);
         
         switch (identificacion[i][longitud-1]){
-          case '1': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Lunes." << endl;
+          case '1': cout << identificacion [i] << " se vacuna el Lunes." << endl;
           break;
-          case '2': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Martes." << endl;
+          case '2': cout << identificacion [i] << " se vacuna el Martes." << endl;
           break;
-          case '3': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Miercoles." << endl;
+          case '3': cout << identificacion [i] << " se vacuna el Miercoles." << endl;
           break;
-          case '4': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Jueves." << endl;
+          case '4': cout << identificacion [i] << " se vacuna el Jueves." << endl;
           break;
-          case '5': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Viernes." << endl;
+          case '5': cout <<  identificacion [i] << " se vacuna el Viernes." << endl;
           break;
-          case '6': cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Sabado." << endl;
+          case '6': cout << identificacion [i] << " se vacuna el Sabado." << endl;
           break;
-          default:  cout << "Al usuario con cedula  " << identificacion [i] << " le corresponde vacunarse el Domingo." << endl;
+          default:  cout << identificacion [i] << " se vacuna el Domingo." << endl;
           break;
         }
     }
